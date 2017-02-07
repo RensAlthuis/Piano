@@ -1,3 +1,3 @@
 # Piano
 
-Little project to connect my piano to a my computer.
+Little project to connect my piano to my computer.
