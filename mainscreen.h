@@ -7,6 +7,14 @@
 #include <QFileDialog>
 #include "window.h"
 #include "midireader.h"
+#define WINDOWS
+#ifdef UNIX
+    #include "pianointerface_unix.h"
+#endif
+#ifdef WINDOWS
+    #include "pianointerface_win.h"
+#endif
+
 
 class MainScreen : public QWidget
 {

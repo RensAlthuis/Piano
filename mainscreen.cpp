@@ -57,10 +57,6 @@ MainScreen::MainScreen(QWidget* parent)
 
 MainScreen::~MainScreen(){
     piano->stop();
-    while(!piano->isFinished()){
-        qDebug() << "Waiting for piano Thread";
-        usleep(50);
-    }
 }
 
 void MainScreen::keyPressEvent(QKeyEvent *event){

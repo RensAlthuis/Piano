@@ -3,7 +3,6 @@
 
 #include <QtGui>
 #include <QtQuick>
-#include "pianointerface.h"
 #include <QTimer>
 #include <math.h>
 
