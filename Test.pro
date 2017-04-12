@@ -12,7 +12,8 @@ SOURCES += \
     midireader.cpp \
     soundengine.cpp
 
-SOURCES += pianointerface_win.cpp
+unix: SOURCES += pianointerface_unix.cpp
+else:win32: SOURCES += pianointerface_win.cpp
 
 HEADERS += \
     window.h \
@@ -20,7 +21,8 @@ HEADERS += \
     midireader.h \
     soundengine.h
 
-HEADERS += pianointerface_win.h
+unix: HEADERS += pianointerface_unix.h
+else:win32: HEADERS += pianointerface_win.h
 
 unix|win32: LIBS += -L$$PWD/lib/ -lmidifile
 
